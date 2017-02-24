@@ -31,7 +31,7 @@ Page({
           edit_number:5, 
           },
         {
-          image_path: "../../images/montain.jpg",
+          image_path: "../../images/montain.png",
           tag: "杨帆 莹莹",
           comment: "玩的真开心",
           at_number: 1,
@@ -39,7 +39,7 @@ Page({
           edit_number:3 
         },
         {
-          image_path: "../../images/montain_all.jpg",
+          image_path: "../../images/montain_all.png",
           tag: "1form",
           comment: "这个还蛮好玩的",
           at_number: 5,

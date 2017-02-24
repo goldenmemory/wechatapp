@@ -1,16 +1,27 @@
-#moment-upload {
+.main_page {
   background-color: #D9EEEB;
 }
-.camera-section {
-  margin: 40pt 32pt  
+
+.add_pictures {
+  display: flex;
+  height: 285rpx;
 }
 
+.camera-section {
+  width: 200rpx;
+  height: 200rpx;
+  background-color: #fff;
+}
 
+.add_icon {
+  width: 200rpx;
+  height: 200rpx;
+}
 
 textarea {
     padding: 8px 14px;        
     color: #666;
     border: 1px solid #dedede;
     border-radius: 4px;
-    margin: 10px;    
+    margin: 20px;    
 }

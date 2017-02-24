@@ -2,8 +2,7 @@ var date_util = require('../../utils/util.js');
 
 Page({
   data: {    
-    cameraSrc: "../../images/camera@3x.png",
-    showPreviewImage: false
+    cameraSrc: "../../images/icon/add.png"
        
   },
   chooseImage: function() {
@@ -17,27 +16,28 @@ Page({
             var tempFilePaths = res.tempFilePaths;
             console.log(tempFilePaths[0]);
             that.setData({
-                previewImageSrcs: tempFilePaths,
-                showPreviewImage: true
+                previewImageSrcs: tempFilePaths
                 })
         }
       })
   },
-  bindDescriptionChange: function (e) {    
-      this.setData({
-          description: e.detail.value
-      })
+  bindDescriptionChange: function (e) {
+    console.log(e);
+        this.setData({
+            description: e.detail.value
+        })
     },  
   uploadMessage: function() {
       var that = this;
-      var mymoments = wx.getStorageSync('mymoments') || [];      
+      var myevents = wx.getStorageSync('mymoment') || [];
+      console.log(that.data);
       var newevent = {
             key: "event" + date_util.getMilliSeconds(),
-            description: that.data.description,            
+            date: that.data.description,            
             imageSrcs: that.data.previewImageSrcs,          
         };
-        mymoments.unshift(newevent);
-        wx.setStorageSync('mymoments', mymoments);        
+        myevents.unshift(newevent);
+        wx.setStorageSync('mymoment', myevents);        
         wx.switchTab({
           url: '/pages/show/show'
         })
@@ -50,7 +50,7 @@ Page({
     // Do something when page ready.
   },
   onShow: function() {
-    this.setData({showPreviewImage: false});
+    // Do something when page show.
   },
   onHide: function() {
     // Do something when page hide.
