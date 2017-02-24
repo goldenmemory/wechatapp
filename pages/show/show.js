@@ -66,5 +66,12 @@ Page({
                 }
             }
         })
+    },
+    onShow: function() {
+          var allmoments = wx.getStorageSync('mymoment') || []
+        
+        this.setData({
+            allmoments: allmoments            
+        })
     }
 })

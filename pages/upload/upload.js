@@ -29,7 +29,7 @@ Page({
     },  
   uploadMessage: function() {
       var that = this;
-      var myevents = wx.getStorageSync('myimages') || [];
+      var myevents = wx.getStorageSync('mymoment') || [];
       console.log(that.data);
       var newevent = {
             key: "event" + date_util.getMilliSeconds(),
@@ -37,8 +37,7 @@ Page({
             imageSrcs: that.data.previewImageSrcs,          
         };
         myevents.unshift(newevent);
-        wx.setStorageSync('myevents', myevents);
-        console.log('asdf');
+        wx.setStorageSync('mymoment', myevents);        
         wx.switchTab({
           url: '/pages/show/show'
         })

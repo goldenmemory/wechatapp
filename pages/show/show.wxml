@@ -5,6 +5,22 @@
       </view>
     </scroll-view>
 
+<scroll-view class="main_activity" scroll-y="true" wx:for="{{allmoments}}">
+  <view class="item">
+    <image src="{{item.imageSrcs[0]}}" mode="aspectFill"></image>    
+    <text>{{item.description}}</text>
+    <view>
+      <image class="icon" src="../../images/icon/at.png" mode="top"></image>
+      <text>1</text>
+      <image class="icon" src="../../images/icon/like.png" mode="top"></image>
+      <text>1</text>
+      <image class="icon" src="../../images/icon/comments.png" mode="top"></image>
+      <text>1</text>
+    </view>
+  </view>
+
+</scroll-view>
+
 <scroll-view class="main_activity" scroll-y="true" wx:for="{{item_array}}">
   <view class="item">
     <image src="{{item.image_path}}" mode="aspectFill"></image>
