@@ -15,18 +15,28 @@
 }
 
 .camera-section {
-  display: inline-block;
   width: 180rpx;
   height: 180rpx;
   background-color: #fff;
   margin-left: 20px;
   margin-right: 6px;
   margin-top: 10px;
+  text-align: center;
 }
 
-.add_icon, .thumbnail-picture{
+textarea {
+  background-color: #fff;
+}
+
+.thumbnail-picture{
   width: 180rpx;
   height: 180rpx;
+}
+
+.add_icon {
+  width: 70rpx;
+  height: 70rpx;
+  padding-top: 28px;
 }
 
 textarea {

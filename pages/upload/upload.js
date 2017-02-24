@@ -2,7 +2,7 @@ var date_util = require('../../utils/util.js');
 
 Page({
     data: {
-        cameraSrc: "../../images/icon/add.png",
+        cameraSrc: "../../images/icon/camera.png",
         // showPreviewImage: false
 
     },
