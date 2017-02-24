@@ -31,28 +31,20 @@ Page({
           edit_number:5, 
           },
         {
-          image_path: "../../images/teambuilding.png",
-          tag: "杨帆",
+          image_path: "../../images/montain.jpg",
+          tag: "杨帆 莹莹",
           comment: "玩的真开心",
           at_number: 1,
           like_number: 2,
           edit_number:3 
         },
         {
-          image_path: "../../images/teambuilding.png",
-          tag: "叔",
+          image_path: "../../images/montain_all.jpg",
+          tag: "1form",
           comment: "这个还蛮好玩的",
           at_number: 5,
           like_number: 6,
           edit_number:7 
-        },
-        {
-          image_path: "../../images/teambuilding.png",
-          tag: "1form",
-          comment: "这个retro有收获！",
-          at_number: 3,
-          like_number: 6,
-          edit_number:3 
         }
       ]
     },
