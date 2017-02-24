@@ -1,0 +1,24 @@
+<view class="page1">
+ <scroll-view class="scroll_x_avatar" scroll-x="true">
+      <view class="avatar_box" wx:for="{{avatar_array}}">
+        <image bindtap="bindAvatarTap" src="{{item.avatar_path}}" class="avatar_image"></image>
+      </view>
+    </scroll-view>
+
+<scroll-view class="main_activity" scroll-y="true" wx:for="{{item_array}}">
+  <view class="item">
+    <image src="{{item.image_path}}" mode="aspectFill"></image>
+    <text class="tag">#{{item.tag}}</text>
+    <text>{{item.comment}}</text>
+    <view>
+      <image class="icon" src="../../images/icon/at.png" mode="top"></image>
+      <text>{{item.at_number}}</text>
+      <image class="icon" src="../../images/icon/like.png" mode="top"></image>
+      <text>{{item.like_number}}</text>
+      <image class="icon" src="../../images/icon/comments.png" mode="top"></image>
+      <text>{{item.edit_number}}</text>
+    </view>
+  </view>
+
+</scroll-view>
+</view>

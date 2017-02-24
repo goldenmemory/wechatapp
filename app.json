@@ -1,22 +1,23 @@
 {
   "pages":[
+    "pages/show/show",
     "pages/index/index",
     "pages/logs/logs",
     "pages/upload/upload"
   ],
   "window":{
     "backgroundTextStyle":"light",
-    "navigationBarBackgroundColor": "#fff",    
     "navigationBarTitleText": "拾光捡影",
-    "navigationBarTextStyle":"black"
+    "navigationBarTextStyle":"black",
+    "navigationBarBackgroundColor": "#D9EEEB"
   },
   "tabBar": {
     "backgroundColor": "#fff",
     "borderStyle": "white",
     "list": [{
-      "pagePath": "pages/index/index",
-      "iconPath": "images/view@3x.png",
-      "selectedIconPath": "images/view@3x.png"      
+      "pagePath": "pages/show/show",
+      "iconPath": "images/icon/home.png",
+      "selectedIconPath": "images/icon/home.png"
     }, {
       "pagePath": "pages/upload/upload",
       "iconPath": "images/upload@3x.png",      
