@@ -60,8 +60,7 @@ Page({
         })
     },
     onShow: function() {
-          var allmoments = wx.getStorageSync('mymoment') || []
-        
+        var allmoments = wx.getStorageSync('mymoments') || []        
         this.setData({
             allmoments: allmoments            
         })

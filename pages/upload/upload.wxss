@@ -1,3 +1,6 @@
+#moment-upload {
+  background-color: #D9EEEB;
+}
 .camera-section {
   margin: 40pt 32pt  
 }
@@ -9,5 +12,5 @@ textarea {
     color: #666;
     border: 1px solid #dedede;
     border-radius: 4px;
-    margin: 20px;    
+    margin: 10px;    
 }

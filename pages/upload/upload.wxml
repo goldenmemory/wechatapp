@@ -1,16 +1,16 @@
-<form bindsubmit="formSubmit">
-    <view wx:if="{{previewImageSrcs.length>0}}" class="container">
+<form id="moment-upload" bindsubmit="formSubmit">
+    <view wx:if="{{showPreviewImage}}" class="container">
     <view wx:for="{{previewImageSrcs}}">
-        <image mode='scaleToFill' style="margin: 20px, 30px; width: 80px; height: 60px;" src="{{item}}"></image>  
+        <image mode='scaleToFill' style="margin: 20px, 30px; width: 250px; height: 120px;" src="{{item}}"></image>  
 </view>
      
     </view>
     <view class="section camera-section">
-        <image mode='scaleToFill' style="margin: 20px, 30px; width: 30px; height: 30px;background-color: #eeeeee;" src="{{cameraSrc}}"  bindtap="chooseImage"></image>
+        <image mode='scaleToFill' style="margin: 10px, 10px; width: 30px; height: 20px;background-color: #eeeeee;" src="{{cameraSrc}}"  bindtap="chooseImage"></image>
     </view>
 
     <view class="section message-section">
-        <textarea placeholder="说点什么" bindinput="bindDescriptionChange"/>
+        <textarea auto-height placeholder="说点什么" bindinput="bindDescriptionChange"/>
     </view>
 
     <view class="section btn-section">
