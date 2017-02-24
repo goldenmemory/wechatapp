@@ -1,0 +1,13 @@
+.camera-section {
+  margin: 40pt 32pt  
+}
+
+
+
+textarea {
+    padding: 8px 14px;        
+    color: #666;
+    border: 1px solid #dedede;
+    border-radius: 4px;
+    margin: 20px;    
+}
