@@ -37,14 +37,6 @@ Page({
           at_number: 1,
           like_number: 2,
           edit_number:3 
-        },
-        {
-          image_path: "../../images/montain_all.png",
-          tag: "1form",
-          comment: "这个还蛮好玩的",
-          at_number: 5,
-          like_number: 6,
-          edit_number:7 
         }
       ]
     },
