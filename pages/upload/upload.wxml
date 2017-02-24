@@ -10,11 +10,11 @@
     </view>
 
     <view class="section message-section">
-        <textarea placeholder="说点什么"/>
+        <textarea placeholder="说点什么" bindinput="bindDescriptionChange"/>
     </view>
 
     <view class="section btn-section">
-        <button formType="submit" type="primary" size="default" bindtap="upload"> 上传 </button>
+        <button formType="submit" type="primary" size="default" bindtap="uploadMessage"> 上传 </button>
     </view>        
     
 </form>

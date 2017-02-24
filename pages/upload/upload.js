@@ -1,9 +1,9 @@
 var date_util = require('../../utils/util.js');
 
 Page({
-  data: {
-    text: "This is page data.",
-    cameraSrc: "../../images/camera@3x.png"    
+  data: {    
+    cameraSrc: "../../images/camera@3x.png"
+       
   },
   chooseImage: function() {
       var that = this;
@@ -21,26 +21,27 @@ Page({
         }
       })
   },
+  bindDescriptionChange: function (e) {
+    console.log(e);
+        this.setData({
+            description: e.detail.value
+        })
+    },  
   uploadMessage: function() {
       var that = this;
-      var myevents = wx.getStorageSync('myevents') || [];
+      var myevents = wx.getStorageSync('myimages') || [];
+      console.log(that.data);
       var newevent = {
             key: "event" + date_util.getMilliSeconds(),
-            date: that.data.date,
-            title: that.data.title,
-            repeatmode: that.data.repeatmode,
-            isTop: that.data.isTop
+            date: that.data.description,            
+            imageSrcs: that.data.previewImageSrcs,          
         };
-        var myevents = wx.getStorageSync('myevents') || [];
-        if (newevent.isTop) {
-            myevents.map(function (e) {
-                e.isTop = false;
-                return e;
-            })
-        }
-        ;
         myevents.unshift(newevent);
-        wx.setStorageSync('myevents', myevents);     
+        wx.setStorageSync('myevents', myevents);
+        console.log('asdf');
+        wx.switchTab({
+          url: '/pages/show/show'
+        })
     
   },
   onLoad: function(options) {

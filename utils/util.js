@@ -21,5 +21,6 @@ function getMilliSeconds(date = new Date()){
 }
 
 module.exports = {
-  formatTime: formatTime
+  formatTime: formatTime,
+  getMilliSeconds: getMilliSeconds
 }
