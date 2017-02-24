@@ -17,7 +17,7 @@ Page({
             console.log(tempFilePaths[0]);
             that.setData({
                 previewImageSrcs: tempFilePaths
-                })
+                });
         }
       })
   },

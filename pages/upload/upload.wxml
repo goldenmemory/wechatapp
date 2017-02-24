@@ -1,15 +1,17 @@
 <view class="main_page">
 <form bindsubmit="formSubmit">
   <view class="add_pictures">
-    <view wx:if="{{previewImageSrcs.length>0}}" class="container">
-      <view wx:for="{{previewImageSrcs}}">
-        <image mode='scaleToFill' src="{{item}}"></image>
+  
+    <view class="section picture-section" wx:if="{{previewImageSrcs.length>0}}">
+      <view class="picture-box" wx:for="{{previewImageSrcs}}">
+        <image class="thumbnail-picture" src="{{item}}"></image>
       </view>
     </view>
-
+  
     <view class="section camera-section">
-        <image class="add_icon" style="" src="{{cameraSrc}}"  bindtap="chooseImage"></image>
+        <image class="add_icon" src="{{cameraSrc}}"      bindtap="chooseImage"></image>
     </view>
+
   </view>
 
     <view class="section message-section">
